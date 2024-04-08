@@ -1,0 +1,431 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using @vitejs/plugin-react"
+    />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <title>Contracting Website</title>
+
+    <!--Links-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  </head>
+
+  <body class="first-screen">
+    <!--Navigation-->
+    <nav class="navigation">
+      <!--Upper Navigation-->
+      <div class="upper-nav">
+          <!--Company Name-->
+          <h1 class="company-name">Wolvez</h1>
+
+          <!--Contact-->
+          <div>
+              <!--Phone-->
+              <div class="phone">
+                  <h5>+1(123)456-7890</h5>
+              </div>
+
+              <!--Email-->
+              <div class="email">
+                  <h5>matthewjones0418@gmail.com</h5>
+              </div>
+          </div>
+
+          <!--Links-->
+          <div>
+              <!--Calender-->
+              <div class="calender">
+                  <a href="">
+                      <span class="material-symbols-outlined">
+                          calendar_add_on
+                      </span>
+                  </a>
+              </div>
+
+              <!--Graph-->
+              <div class="graph">
+                  <a href="">
+                      <span class="material-symbols-outlined">
+                          equalizer
+                      </span>
+                  </a>
+              </div>
+
+              <!--Language-->
+              <div class="language">
+                  <a href="">
+                      <span class="material-symbols-outlined">
+                          language
+                      </span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!--Lower Navigation-->
+      <div class="lower-nav">
+          <!--Home-->
+          <div class="home">
+              <div class="dropdown">
+                  <btn class="dropbtn">
+                      <h5>Home</h5>
+                  </btn>
+                  <div class="dropdown-content">
+                      <a href="#">example</a>
+                      <a href="#">example</a>
+                      <a href="#">example</a>
+                  </div>
+              </div>
+          </div>
+
+          <!--About Us-->
+          <div class="about">
+              <h5>
+                  <a href="">About Us</a>
+              </h5>
+          </div>
+
+          <!--Services-->
+          <div class="services">
+              <h5>
+                  <a href="">Services</a>
+              </h5>
+          </div>
+
+          <!--Location-->
+          <div class="location">
+              <h5>
+                  <a href="">Location</a>
+              </h5>
+          </div>
+
+          <!--Contact Us-->
+          <div class="contact">
+              <h5>
+                  <a href="">Contact Us</a>
+              </h5>
+          </div>
+
+          <!--Pricing-->
+          <div class="pricing">
+              <h5>
+                  <a href="">Pricing</a>
+              </h5>
+          </div>
+
+          <!--Get a quote-->
+          <a class="get-a-quote" href="">
+              <h5 class=get-a-quote-text>
+                  Get A Quote Now
+              </h5>
+          </a>
+
+          <!--Background-->
+          <div class="lower-nav-background"></div>
+      </div>
+  </nav>
+
+  <!--Background-->
+  <div class="background">
+      <image src=""></image>
+  </div>
+
+  <!--First Page-->
+  <div class="first-page">
+      <!--Company Name-->
+      <div class="first-page-company-name">
+          <h5>
+              Company Name Here
+          </h5>
+      </div>
+
+      <!--What we offer-->
+      <div class="what-we-offer">
+          <h3>
+              Place Sentence <br> Here
+          </h3>
+      </div>
+
+      <!--licenses-->
+      <div>
+
+      </div>
+
+      <!--Get a quote-->
+      <div class="first-page-estimate">
+          <h5 class="first-page-estimate-text">
+              <a href="">Get a quote</a>
+          </h5>
+      </div>
+  </div>
+  </body>
+  <script type="module" src="/src/index.jsx"></script>
+</html>
+
+
+
+CSS
+
+body {
+  background-color:rgb(0, 102, 227);
+  font-family:Arial;
+}
+h1 {
+  font-size:3em;
+}
+h2 {
+  font-size:2.5em;
+}
+h3 {
+  font-size:2em;
+}
+h4 {
+  font-size:1.5em;
+}
+h5 {
+  font-size:1em;
+}
+h6 {
+  font-size:.75em;
+}
+a {
+  color:black;
+  text-decoration:none;
+}
+a:hover {
+  color:rgb(176, 176, 37);
+}
+a.a-home {
+  color:white;
+  text-decoration:none;
+}
+a.a-home:hover {
+  color:rgb(0, 102, 227);
+}
+a.get-a-quote {
+  color:white;
+}
+a.get-a-quote:hover {
+  color:rgb(0, 102, 227);
+}
+/* Dropdown Button */
+.dropdown {
+  position:relative;
+  display:inline-block;
+}
+.dropdown-content {
+  display:none;
+  position:absolute;
+  top:4.5em;
+  left:-1.2em;
+  background-color:yellow;
+  min-width:160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+}
+.dropdown-content a {
+  color:black;
+  padding:12px 16px;
+  text-decoration:none;
+  display:block;
+}
+.dropdown-content a:hover {
+  background-color:rgb(176, 176, 37);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} 
+.company-name {
+  position:absolute;
+  top:-2%;
+  left:4%;
+  color:white;
+}
+.background {
+  position:absolute;
+  top:18.25%;
+  width:100%;
+  height:100%;
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqorelJA3FkFcUYPNJ_hnI0b0EdTklFLJACw&usqp=CAU");
+  background-size:cover;
+  filter:brightness(.6);
+}
+.lower-nav-background {
+  position:absolute;
+  left:67.75%;
+  width:32.25%;
+  height:4.51em;
+  top:.34em;
+  background-color:yellow;
+}
+.first-screen {
+  position:absolute;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  margin-top:-5px;
+  margin-left:-5px;
+  height:100%;
+  width:101%;
+  min-width:1080px;
+}
+/* Upper Navigation */
+.upper-nav {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:18.25%;
+  width:100%;
+  background-color:rgb(0, 80, 177);
+}
+.calender {
+  position:absolute;
+  top:12.5%;
+  right:17.5%;
+}
+.graph {
+  position:absolute;
+  top:12.5%;
+  right:15%;
+}
+.language {
+  position:absolute;
+  top:12.5%;
+  right:12.5%;
+}
+
+/* Lower Navigation */
+.lower-nav {
+  position:absolute;
+  top:6.675%;
+  right:0;
+  height:10.75%;
+  width:100%;
+}
+.home {
+  position:absolute;
+  top:7.5%;
+  right:72%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:rgb(0, 0, 0);
+  color:white;
+}
+.about {
+  position:absolute;
+  top:7.5%;
+  right:63.5%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:yellow;
+}
+.services {
+  position:absolute;
+  top:7.5%;
+  right:56.25%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:yellow;
+}
+.location {
+  position:absolute;
+  top:7.5%;
+  right:48.75%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:yellow;
+}
+.contact {
+  position:absolute;
+  top:7.5%;
+  right:39.25%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:yellow;
+}
+.pricing {
+  position:absolute;
+  top:7.5%;
+  right:32.25%;
+  padding-left:1.5%;
+  padding-right:1.5%;
+  background-color:yellow;
+}
+.get-a-quote {
+  position:absolute;
+  right:10%;
+  top:.55em;
+  height:65px;
+  padding-right:2%;
+  padding-left:2%;
+  border-radius:10px;
+  background-color:black;
+  color:white;
+  z-index:1;
+}
+.get-a-quote-text {
+  position:relative;
+  top:-3px;
+}
+.phone {
+  position:relative;
+  color:white;
+  top:-10px;
+  left:21.5%;
+}
+.email {
+  position:relative;
+  color:white;
+  top:-55px;
+  left:34%;
+}
+
+/* First Page */
+.first-page {
+  position:absolute;
+  top:35%;
+  left:15%;
+}
+.first-page-company-name {
+  position:relative;
+  top:1em;
+  color:white;
+}
+.what-we-offer {
+  position:relative;
+  top:35%;
+  color:white;
+}
+.first-page-estimate {
+  position:absolute;
+  top:90%;
+  background-color:yellow;
+  height:2em;
+  width:7em;
+  border-radius:5px;
+  color:white;
+}
+.first-page-estimate-text {
+  position:relative;
+  text-align:center;
+  top:-65%;
+}
